@@ -1,5 +1,6 @@
 import unittest
-from src.my_module.person import Person
+from my_module.person import Person
+
 
 class TestPerson(unittest.TestCase):
     def test_hello(self):
@@ -10,6 +11,7 @@ class TestPerson(unittest.TestCase):
         p = Person("Bob", 25)
         p.have_birthday()
         self.assertEqual(p.age, 26)
+
 
 if __name__ == "__main__":
     unittest.main()
